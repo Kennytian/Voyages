@@ -1,15 +1,6 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * 
- * Generated with the TypeScript template
- * https://github.com/emin93/react-native-template-typescript
- * 
- * @format
- */
-
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
+import * as RNLocalize from "react-native-localize";
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -20,7 +11,13 @@ const instructions = Platform.select({
 
 interface Props {}
 export default class App extends Component<Props> {
+  componentDidMount() {
+
+  }
+
   render() {
+    console.log(RNLocalize.getLocales());
+    console.log(RNLocalize.getCurrencies());
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>Welcome to React Native!</Text>

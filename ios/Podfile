@@ -1,0 +1,58 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Voyages' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for Voyages
+  platform :ios, '9.0'
+  pod 'React', :path => '../node_modules/react-native', :subspecs => [
+    'ART',
+    'Core',
+    'CxxBridge', # Include this for RN >= 0.47
+    'DevSupport', # Include this to enable In-App Devmenu if RN >= 0.43
+    'RCTText',
+    'RCTNetwork',
+    'RCTWebSocket', # Needed for debugging
+    'RCTAnimation', # Needed for FlatList and animations running on native UI thread
+    'RCTPushNotification',
+    'RCTImage',
+    'RCTActionSheet',
+    'RCTGeolocation',
+    'RCTLinkingIOS',
+    'RCTSettings',
+    'RCTVibration',
+    # Add any other subspecs you want to use in your project
+    'RCTBlob',
+    'RCTCameraRoll',
+  ]
+    # Explicitly include Yoga if you are using RN >= 0.42.0
+    pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
+
+    # Third party deps podspec link
+    pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
+    pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
+    pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
+
+    pod 'RNLocalize', :path => '../node_modules/react-native-localize'
+
+  target 'VoyagesTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+target 'Voyages-tvOS' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for Voyages-tvOS
+
+  target 'Voyages-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

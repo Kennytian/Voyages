@@ -1,0 +1,4 @@
+{
+    "setupFilesAfterEnv": ["./init.ts"],
+    "testEnvironment": "node"
+}

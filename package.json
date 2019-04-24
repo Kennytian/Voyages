@@ -13,7 +13,9 @@
     "run-ios": "react-native run-ios",
     "start-debugger": "env REACT_DEBUGGER=\"$([ -d '/Applications/React Native Debugger.app' ] && echo \"open 'rndebugger://set-debugger-loc?host=localhost&port=8081' --args\")\" node node_modules/react-native/local-cli/cli.js start --port 8081",
     "upgrade-interactive": "yarn upgrade-interactive",
-    "test": "jest"
+    "test": "jest",
+    "test:e2e": "detox test -c ios.sim.debug",
+    "test:e2e:build": "detox build"
   },
   "dependencies": {
     "react": "16.8.3",
@@ -23,15 +25,31 @@
   "devDependencies": {
     "@babel/core": "^7.4.3",
     "@babel/runtime": "^7.4.3",
+    "@types/detox": "^9.0.5",
+    "@types/jasmine": "^3.3.12",
     "@types/jest": "^24.0.11",
     "@types/react": "^16.8.14",
     "@types/react-native": "^0.57.45",
     "@types/react-test-renderer": "^16.8.1",
     "babel-jest": "^24.7.1",
+    "detox": "^12.4.0",
     "jest": "^24.7.1",
     "metro-react-native-babel-preset": "^0.53.1",
     "react-test-renderer": "16.8.3",
+    "ts-jest": "^24.0.2",
     "typescript": "^3.4.5"
+  },
+  "detox": {
+    "test-runner": "jest",
+    "runner-config": "e2e/config.json",
+    "configurations": {
+      "ios.sim.debug": {
+        "binaryPath": "ios/build/Build/Products/Debug-iphonesimulator/Voyages.app",
+        "build": "xcodebuild -workspace ios/Voyages.xcworkspace -scheme Voyages -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build -UseModernBuildSystem=NO",
+        "type": "ios.simulator",
+        "name": "iPhone X"
+      }
+    }
   },
   "jest": {
     "preset": "react-native"

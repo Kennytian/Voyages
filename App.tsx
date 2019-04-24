@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { Platform, StyleSheet, Text, TouchableOpacity, View, TextInput } from 'react-native';
-import * as RNLocalize from "react-native-localize";
+// import * as RNLocalize from "react-native-localize";
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -21,8 +21,8 @@ export default class App extends Component<Props, State> {
   };
 
   render() {
-    console.log(RNLocalize.getLocales());
-    console.log(RNLocalize.getCurrencies());
+    // console.log(RNLocalize.getLocales());
+    // console.log(RNLocalize.getCurrencies());
     const { text } = this.state;
     return (
       <View style={styles.container}>

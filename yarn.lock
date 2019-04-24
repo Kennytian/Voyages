@@ -904,10 +904,10 @@
   resolved "https://registry.npm.taobao.org/@types/prop-types/download/@types/prop-types-15.7.1.tgz#f1a11e7babb0c3cad68100be381d1e064c68f1f6"
   integrity sha1-8aEee6uww8rWgQC+OB0eBkxo8fY=
 
-"@types/react-native@^0.57.45":
-  version "0.57.49"
-  resolved "https://registry.npm.taobao.org/@types/react-native/download/@types/react-native-0.57.49.tgz#eef43fba8149c6591201edcde9930cb30169b97f"
-  integrity sha1-7vQ/uoFJxlkSAe3N6ZMMswFpuX8=
+"@types/react-native@^0.57.50":
+  version "0.57.50"
+  resolved "https://registry.npm.taobao.org/@types/react-native/download/@types/react-native-0.57.50.tgz#b809960e0ce70190f8082d050bb2aa99b5ee4db2"
+  integrity sha1-uAmWDgznAZD4CC0FC7KqmbXuTbI=
   dependencies:
     "@types/prop-types" "*"
     "@types/react" "*"
@@ -1951,7 +1951,7 @@ detect-newline@^2.1.0:
   resolved "http://registry.npm.taobao.org/detect-newline/download/detect-newline-2.1.0.tgz#f41f1c10be4b00e87b5f13da680759f2c5bfd3e2"
   integrity sha1-9B8cEL5LAOh7XxPaaAdZ8sW/0+I=
 
-detox@^12.4.0:
+detox@^12.4.1:
   version "12.4.0"
   resolved "https://registry.npm.taobao.org/detox/download/detox-12.4.0.tgz#f5c011af8a3264ea64e1caabfef8d10c35d9129a"
   integrity sha1-9cARr4oyZOpk4cqr/vjRDDXZEpo=

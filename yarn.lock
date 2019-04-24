@@ -891,13 +891,13 @@
 
 "@types/prop-types@*":
   version "15.7.1"
-  resolved "http://registry.npm.taobao.org/@types/prop-types/download/@types/prop-types-15.7.1.tgz#f1a11e7babb0c3cad68100be381d1e064c68f1f6"
+  resolved "https://registry.npm.taobao.org/@types/prop-types/download/@types/prop-types-15.7.1.tgz#f1a11e7babb0c3cad68100be381d1e064c68f1f6"
   integrity sha1-8aEee6uww8rWgQC+OB0eBkxo8fY=
 
 "@types/react-native@^0.57.45":
-  version "0.57.45"
-  resolved "http://registry.npm.taobao.org/@types/react-native/download/@types/react-native-0.57.45.tgz#bc341b2fbe879aec6d52f799f7342f674e045c4f"
-  integrity sha1-vDQbL76HmuxtUveZ9zQvZ04EXE8=
+  version "0.57.49"
+  resolved "https://registry.npm.taobao.org/@types/react-native/download/@types/react-native-0.57.49.tgz#eef43fba8149c6591201edcde9930cb30169b97f"
+  integrity sha1-7vQ/uoFJxlkSAe3N6ZMMswFpuX8=
   dependencies:
     "@types/prop-types" "*"
     "@types/react" "*"
@@ -909,10 +909,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^16.8.13":
-  version "16.8.13"
-  resolved "http://registry.npm.taobao.org/@types/react/download/@types/react-16.8.13.tgz#a82b15aad9ab91c40edca0d6889b7745ae24f053"
-  integrity sha1-qCsVqtmrkcQO3KDWiJt3Ra4k8FM=
+"@types/react@*", "@types/react@^16.8.14":
+  version "16.8.14"
+  resolved "https://registry.npm.taobao.org/@types/react/download/@types/react-16.8.14.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Freact%2Fdownload%2F%40types%2Freact-16.8.14.tgz#b561bfabeb8f60d12e6d4766367e7a9ae927aa18"
+  integrity sha1-tWG/q+uPYNEubUdmNn56muknqhg=
   dependencies:
     "@types/prop-types" "*"
     csstype "^2.2.0"
@@ -1765,7 +1765,7 @@ cssstyle@^1.0.0:
 
 csstype@^2.2.0:
   version "2.6.4"
-  resolved "http://registry.npm.taobao.org/csstype/download/csstype-2.6.4.tgz#d585a6062096e324e7187f80e04f92bd0f00e37f"
+  resolved "https://registry.npm.taobao.org/csstype/download/csstype-2.6.4.tgz#d585a6062096e324e7187f80e04f92bd0f00e37f"
   integrity sha1-1YWmBiCW4yTnGH+A4E+SvQ8A438=
 
 dashdash@^1.12.0:
@@ -5914,10 +5914,10 @@ typedarray@^0.0.6:
   resolved "http://registry.npm.taobao.org/typedarray/download/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@^3.4.3:
-  version "3.4.3"
-  resolved "http://registry.npm.taobao.org/typescript/download/typescript-3.4.3.tgz?cache=0&other_urls=http%3A%2F%2Fregistry.npm.taobao.org%2Ftypescript%2Fdownload%2Ftypescript-3.4.3.tgz#0eb320e4ace9b10eadf5bc6103286b0f8b7c224f"
-  integrity sha1-DrMg5KzpsQ6t9bxhAyhrD4t8Ik8=
+typescript@^3.4.5:
+  version "3.4.5"
+  resolved "https://registry.npm.taobao.org/typescript/download/typescript-3.4.5.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ftypescript%2Fdownload%2Ftypescript-3.4.5.tgz#2d2618d10bb566572b8d7aad5180d84257d70a99"
+  integrity sha1-LSYY0Qu1ZlcrjXqtUYDYQlfXCpk=
 
 ua-parser-js@^0.7.18:
   version "0.7.19"

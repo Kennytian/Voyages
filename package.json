@@ -4,10 +4,15 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "run-android": "react-native run-android",
-    "android-9.0": "$ANDROID_HOME/tools/emulator @Pixel_2_XL_API_28",
+    "android-debug": "react-native run-android",
+    "android-release": "cd android && ./gradlew assembleRelease && cd -",
+    "android-clean": "cd android && ./gradlew clean && cd -",
+    "android-dev-menu": "adb shell input keyevent 82",
     "android-5.0": "$ANDROID_HOME/tools/emulator @Nexus_4_API_21",
+    "android-9.0": "$ANDROID_HOME/tools/emulator @Pixel_2_XL_API_28",
     "run-ios": "react-native run-ios",
+    "start-debugger": "env REACT_DEBUGGER=\"$([ -d '/Applications/React Native Debugger.app' ] && echo \"open 'rndebugger://set-debugger-loc?host=localhost&port=8081' --args\")\" node node_modules/react-native/local-cli/cli.js start --port 8081",
+    "upgrade-interactive": "yarn upgrade-interactive",
     "test": "jest"
   },
   "dependencies": {
@@ -19,14 +24,14 @@
     "@babel/core": "^7.4.3",
     "@babel/runtime": "^7.4.3",
     "@types/jest": "^24.0.11",
-    "@types/react": "^16.8.13",
+    "@types/react": "^16.8.14",
     "@types/react-native": "^0.57.45",
     "@types/react-test-renderer": "^16.8.1",
     "babel-jest": "^24.7.1",
     "jest": "^24.7.1",
     "metro-react-native-babel-preset": "^0.53.1",
     "react-test-renderer": "16.8.3",
-    "typescript": "^3.4.3"
+    "typescript": "^3.4.5"
   },
   "jest": {
     "preset": "react-native"

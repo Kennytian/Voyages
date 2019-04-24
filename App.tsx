@@ -26,7 +26,7 @@ export default class App extends Component<Props, State> {
     const { text } = this.state;
     return (
       <View style={styles.container}>
-        <Text testID={'welcome'} style={styles.welcome}>Welcome to React Native!</Text>
+        <Text testID="welcome" style={styles.welcome}>Welcome to React Native!</Text>
         <Text style={styles.instructions}>To get started, edit App.tsx</Text>
         <Text style={styles.instructions}>{instructions}</Text>
         <TouchableOpacity testID='MyUniqueId123'>

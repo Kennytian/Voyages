@@ -19,7 +19,6 @@ module.exports = {
     '@typescript-eslint/explicit-member-accessibility':0,
     '@typescript-eslint/no-empty-interface':0,
     '@typescript-eslint/no-unused-vars': 0,
-    // '@typescript-eslint/indent': 0,
     'react-native/no-unused-styles': 2,
     'react-native/split-platform-components': 2,
     'react-native/no-inline-styles': 2,

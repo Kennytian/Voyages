@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Platform, StyleSheet, Text, TouchableOpacity, View, TextInput } from 'react-native';
+import { Platform, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 // import * as RNLocalize from "react-native-localize";
 
 const instructions = Platform.select({
@@ -47,9 +47,15 @@ const styles = StyleSheet.create({
 });
 
 export default class App extends Component<Props, State> {
-  // eslint-disable-next-line @typescript-eslint/explicit-member-accessibility
   state = {
     text: '',
+  };
+
+  private reverseText = (text: string): string => {
+    return text
+      .split('')
+      .reverse()
+      .join('');
   };
 
   render() {
@@ -87,11 +93,4 @@ export default class App extends Component<Props, State> {
       </View>
     );
   }
-
-  private reverseText = (text: string): string => {
-    return text
-      .split('')
-      .reverse()
-      .join('');
-  };
 }

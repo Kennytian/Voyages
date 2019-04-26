@@ -1,4 +1,15 @@
-import { expect, device, element, by } from "detox";
+import { expect, device, element, by } from 'detox';
+
+// Verify that we can use TypeScript constructs
+function reverse(text?: string) {
+  if (text) {
+    return text
+      .split('')
+      .reverse()
+      .join('');
+  }
+  return '';
+}
 
 describe('Example', () => {
   beforeEach(async () => {
@@ -23,21 +34,10 @@ describe('Example', () => {
     await expect(element(by.text('World!!!'))).toBeVisible();
   });
 
-
-  it("should reverse text in text input", async () => {
-    const input = "abcdefghijklmnopqrstuvwxyz";
-    await element(by.id("textInput")).tap();
-    await element(by.id("textInput")).typeText(input);
-    await expect(element(by.id("reversedText"))).toHaveText(
-      reverse("abcdefghijklmnopqrstuvwxyz"),
-    );
+  it('should reverse text in text input', async () => {
+    const input = 'abcdefghijklmnopqrstuvwxyz';
+    await element(by.id('textInput')).tap();
+    await element(by.id('textInput')).typeText(input);
+    await expect(element(by.id('reversedText'))).toHaveText(reverse('abcdefghijklmnopqrstuvwxyz'));
   });
 });
-
-// Verify that we can use TypeScript constructs
-function reverse(text?: string) {
-  if (text) {
-    return text.split("").reverse().join("");
-  }
-  return "";
-}

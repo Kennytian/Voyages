@@ -36,6 +36,7 @@ target 'Voyages' do
     pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
     pod 'RNLocalize', :path => '../node_modules/react-native-localize'
+    pod 'RNDeviceInfo', :path => '../node_modules/react-native-device-info'
 
   target 'VoyagesTests' do
     inherit! :search_paths

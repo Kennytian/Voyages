@@ -13,6 +13,7 @@ import java.util.List;
 
 import com.reactcommunity.rnlocalize.RNLocalizePackage;
 import com.learnium.RNDeviceInfo.RNDeviceInfo;
+import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
 
 public class MainApplication extends Application implements ReactApplication {
 
@@ -27,7 +28,8 @@ public class MainApplication extends Application implements ReactApplication {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
           new RNLocalizePackage(),
-          new RNDeviceInfo()
+          new RNDeviceInfo(),
+          new AsyncStoragePackage()
       );
     }
 

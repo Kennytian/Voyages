@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import { Platform, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 // import * as RNLocalize from "react-native-localize";
 
@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     // justifyContent: 'center',
-    marginTop: 50,
+    paddingTop: 50,
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
   },
 });
 
-export default class App extends Component<Props, State> {
+export default class Home extends PureComponent<Props, State> {
   state = {
     text: '',
   };

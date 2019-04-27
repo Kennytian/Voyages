@@ -12,6 +12,9 @@ import java.util.Arrays;
 import java.util.List;
 
 import com.reactcommunity.rnlocalize.RNLocalizePackage;
+import com.learnium.RNDeviceInfo.RNDeviceInfo;
+import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
+import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 
 public class MainApplication extends Application implements ReactApplication {
 
@@ -25,7 +28,10 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
-          new RNLocalizePackage()
+          new RNLocalizePackage(),
+          new RNDeviceInfo(),
+          new AsyncStoragePackage(),
+          new RNGestureHandlerPackage()
       );
     }
 

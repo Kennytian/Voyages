@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { Platform, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { Button, Platform, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 // import * as RNLocalize from "react-native-localize";
 
 const instructions = Platform.select({
@@ -90,6 +90,11 @@ export default class Home extends PureComponent<Props, State> {
         <Text testID="reversedText" style={styles.reversedText}>
           {this.reverseText(text)}
         </Text>
+        <Button
+          testID="goToDetailButton"
+          title="Go to Details"
+          onPress={() => this.props.navigation.navigate('Detail')}
+        />
       </View>
     );
   }

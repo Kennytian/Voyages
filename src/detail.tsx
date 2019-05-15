@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
   },
 });
 
-export default class DetailScreen extends PureComponent {
+export default class DetailScreen extends PureComponent<any, any> {
   render() {
     return (
       <View style={styles.container}>

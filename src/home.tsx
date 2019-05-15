@@ -1,5 +1,7 @@
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 import { Button, Platform, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { isDiff } from './utils/object-diff';
+import NavigationService from './routes/navigation-service';
 // import * as RNLocalize from "react-native-localize";
 
 const instructions = Platform.select({
@@ -46,7 +48,7 @@ const styles = StyleSheet.create({
   },
 });
 
-export default class Home extends PureComponent<Props, State> {
+export default class Home extends Component<Props, State> {
   state = {
     text: '',
   };
@@ -56,6 +58,14 @@ export default class Home extends PureComponent<Props, State> {
       .split('')
       .reverse()
       .join('');
+  };
+
+  shouldComponentUpdate(nextProps: Readonly<Props>, nextState: Readonly<State>, nextContext: any): boolean {
+    return isDiff(this.props, nextProps, this.state, nextState);
+  }
+
+  goToDetail = () => {
+    NavigationService.navigate('Detail');
   };
 
   render() {
@@ -90,11 +100,7 @@ export default class Home extends PureComponent<Props, State> {
         <Text testID="reversedText" style={styles.reversedText}>
           {this.reverseText(text)}
         </Text>
-        <Button
-          testID="goToDetailButton"
-          title="Go to Details"
-          onPress={() => this.props.navigation.navigate('Detail')}
-        />
+        <Button testID="goToDetailButton" title="Go to Details" onPress={this.goToDetail} />
       </View>
     );
   }

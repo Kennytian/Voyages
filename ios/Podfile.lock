@@ -68,9 +68,9 @@ PODS:
     - React/Core
     - React/fishhook
     - React/RCTBlob
-  - RNCAsyncStorage (1.3.4):
+  - RNCAsyncStorage (1.4.0):
     - React
-  - RNDeviceInfo (1.6.1):
+  - RNDeviceInfo (1.6.2):
     - React
   - RNGestureHandler (1.2.1):
     - React
@@ -135,8 +135,8 @@ SPEC CHECKSUMS:
   Folly: de497beb10f102453a1afa9edbf8cf8a251890de
   glog: aefd1eb5dda2ab95ba0938556f34b98e2da3a60d
   React: 76e6aa2b87d05eb6cccb6926d72685c9a07df152
-  RNCAsyncStorage: d1776f44eff0766252048e7fcd05f5c0dab9b6e8
-  RNDeviceInfo: 958a1ed6f94e04557b865b8ef848cfc83db0ebba
+  RNCAsyncStorage: 0c3ef98facf3fecf455b518d6f52e10fc964c523
+  RNDeviceInfo: 367e1d3b3bbebb68f2bbabb3d93e6c8b851ec87d
   RNGestureHandler: aea90f0ad8e35fec23438db6fc3ad79be58bb734
   RNLocalize: d6a0b7ed06d3c5fca79a55ed8e1337032fc33722
   yoga: 92b2102c3d373d1a790db4ab761d2b0ffc634f64

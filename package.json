@@ -68,8 +68,5 @@
         "name": "iPhone X"
       }
     }
-  },
-  "jest": {
-    "preset": "react-native"
   }
 }
